@@ -1,0 +1,110 @@
+page{
+    padding-bottom: 100rpx;
+}
+.detail{
+    //轮播图
+    swiper{
+        height: 70vw;
+        swiper-item{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100%;
+            image{
+                width: 62%;
+            }
+        }
+    }
+    //商品信息
+    .goods_info{
+        width: 100vw;
+        padding-left: 20rpx;
+        .goods_price{
+            color: #E42F14;
+            font-weight: bold;
+        }
+        .info{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            .goods_name{
+                flex: 9;
+            }
+            .collection{
+                flex: 2;
+                display: flex;
+                align-items: center;
+                border-left: 2rpx solid #9EA09D;
+                flex-direction: column;
+                .icon-shoucang1{
+                    color: #e42f14;
+                }
+            }
+        }
+    }
+    //图文详情
+    .detail{
+        .text{
+            display: flex;
+            align-items: center;
+            color: #E42F14;
+            font-weight: bold;
+            height: 100rpx;
+            font-size: 40rpx;
+            padding-left: 20rpx;
+            border-top: 10rpx solid #ECEFEC;
+            border-bottom: 10rpx solid #ECEFEC;
+        }
+    }
+    //底部工具栏
+    .goods_tools{
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        display: flex;
+        background-color: #FCFFFC;
+        border-top: 2rpx solid #DADDDA;
+        height: 100rpx;;
+        .left{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex: 5;
+            button{
+                padding: 0rpx;
+            }
+           .item{
+               display: flex;
+               flex-direction: column;
+               align-items: center;
+               justify-content: center;
+               background-color: #ffffff;
+               width: 100rpx;
+               height: 100%;
+            text{
+                font-weight: bold;
+                font-size: 24rpx;
+            }
+           }
+
+        }
+        .right{
+            display: flex;
+            flex: 6;
+            view{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                color: white;
+            }
+            .cart{
+                background-color: #FFA200;
+            }
+            .pay{
+                background-color: #F8554A;
+            }
+        }
+    }
+}

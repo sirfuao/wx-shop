@@ -1,0 +1,101 @@
+page {
+  padding-bottom: 100rpx;
+}
+.detail swiper {
+  height: 70vw;
+}
+.detail swiper swiper-item {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+}
+.detail swiper swiper-item image {
+  width: 62%;
+}
+.detail .goods_info {
+  width: 100vw;
+  padding-left: 20rpx;
+}
+.detail .goods_info .goods_price {
+  color: #E42F14;
+  font-weight: bold;
+}
+.detail .goods_info .info {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.detail .goods_info .info .goods_name {
+  flex: 9;
+}
+.detail .goods_info .info .collection {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  border-left: 2rpx solid #9EA09D;
+  flex-direction: column;
+}
+.detail .goods_info .info .collection .icon-shoucang1 {
+  color: #e42f14;
+}
+.detail .detail .text {
+  display: flex;
+  align-items: center;
+  color: #E42F14;
+  font-weight: bold;
+  height: 100rpx;
+  font-size: 40rpx;
+  padding-left: 20rpx;
+  border-top: 10rpx solid #ECEFEC;
+  border-bottom: 10rpx solid #ECEFEC;
+}
+.detail .goods_tools {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  background-color: #FCFFFC;
+  border-top: 2rpx solid #DADDDA;
+  height: 100rpx;
+}
+.detail .goods_tools .left {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex: 5;
+}
+.detail .goods_tools .left button {
+  padding: 0rpx;
+}
+.detail .goods_tools .left .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  width: 100rpx;
+  height: 100%;
+}
+.detail .goods_tools .left .item text {
+  font-weight: bold;
+  font-size: 24rpx;
+}
+.detail .goods_tools .right {
+  display: flex;
+  flex: 6;
+}
+.detail .goods_tools .right view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  color: white;
+}
+.detail .goods_tools .right .cart {
+  background-color: #FFA200;
+}
+.detail .goods_tools .right .pay {
+  background-color: #F8554A;
+}

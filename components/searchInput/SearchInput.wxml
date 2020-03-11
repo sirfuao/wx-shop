@@ -1,0 +1,7 @@
+<view class="search">
+    <!-- 注意，搜索这里其实是一个超链接,点击后会跳转的 -->
+    <navigator url="/pages/search/index" open-type="navigate">
+                                        <!--这个属性的意思是允许跳转到非tabBar 页面-->
+        <text>搜索</text>
+    </navigator>
+</view>

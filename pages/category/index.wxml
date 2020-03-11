@@ -1,0 +1,24 @@
+<!--分类页面-->
+<view class="category">
+     <!--顶部搜索框-->
+     <SearchInput></SearchInput>
+    <view class="cates">
+        <!--左侧菜单区-->
+        <scroll-view class="left_menu_list" scroll-y>
+            <view class="menu_item {{index===currentIndex?'active':''}}" wx:for="{{leftMenuList}}" wx:key="*this" data-index="{{index}}" bindtap="handleItemTap">{{item}}</view>
+        </scroll-view>
+        <!--右侧内容区-->
+        <scroll-view class="right_content" scroll-y scroll-top="{{scrollTop}}">
+            <view class="goods_group" wx:for="{{rightConentList}}" wx:for-item="item1" wx:for-index="index1" wx:key="cat_id">
+                <view class="goods_title">{{ item1.cat_name }}</view>
+                <view class="goods_list">
+                                        <!--注意一下微信小程序 url 变量需要加双大括号-->
+                    <navigator url="/pages/goods_list/index?cid={{ item2.cat_id }}" wx:for="{{item1.children}}" wx:for-item="item2" wx:for-index="index2" wx:key="cat_id">
+                        <image mode="widthFix" src="{{item2.cat_icon}}"/>
+                        <view class="goods_name">{{ item2.cat_name }}</view>
+                    </navigator>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+</view>

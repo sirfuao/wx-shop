@@ -1,0 +1,26 @@
+/* 引入阿里字体图标 */
+@import './style/icon.wxss';
+
+/* 在微信小程序中 不支持通配符 "*"  */
+page,view,text,swiper,swiper-item,image,navigator{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+/* 
+  主体颜色
+  1、less 中 存在变量得个知识
+  2、原生的css和wxss中也是支持 变量
+*/
+
+page{
+/* 定义主体颜色 */
+--themeColor:#E42F14;
+/* 
+    统一字体大小 假设 设计稿大小是 375px
+    1px = 2rex;
+    14px = 28rpx;
+ */
+ font-size: 28rpx;
+}

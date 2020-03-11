@@ -1,0 +1,71 @@
+page{
+    background-color: #ECEEEB;
+}
+//问题种类
+.problem{
+    .title{
+        margin: 20rpx 0 0 20rpx;
+        font-size: 36rpx;
+    }
+    .problem_item{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-around;
+        align-items: center;
+        .item{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200rpx;
+            height: 80rpx;
+            margin: 25rpx;
+            border-radius: 10rpx;
+            background-color: #ffffff;
+        }
+        .other{
+            margin-top: -5rpx;
+        }
+    }
+}
+//富文本输入框
+.fb_content{
+    background-color: #ffffff;
+    textarea{
+        width: 100vw;
+        height: 320rpx;
+        padding: 10rpx;
+    }
+    .tools_btn{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20rpx;
+        button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 90rpx;
+            height: 90rpx;
+            font-size: 40rpx;
+            padding: 0rpx;
+            margin-left: 20rpx;
+        }
+    }
+}
+//提交
+.btn{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+   button{
+       position: absolute;
+       top: 30rpx;
+       right: 30rpx;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 25% !important;
+       height: 100rpx;
+       padding: 0px;
+       margin-left: 200rpx;
+   }
+}

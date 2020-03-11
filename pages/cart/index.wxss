@@ -1,0 +1,113 @@
+page {
+  padding-bottom: 90rpx;
+}
+.address_btn {
+  padding: 20rpx 0;
+}
+.address_info {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+}
+.cart_title {
+  height: 90rpx;
+  font-size: 42rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 20rpx;
+  border-top: 2rpx solid var(--themeColor);
+  border-bottom: 2rpx solid var(--themeColor);
+}
+.cart_main {
+  display: flex;
+  height: 200rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #D8DAD7;
+}
+.cart_main .cart_chk_wrap {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  color: var(--themeColor);
+}
+.cart_main .cart_img_warp {
+  margin-right: 20rpx;
+  flex: 2;
+}
+.cart_main .cart_img_warp image {
+  width: 100%;
+  height: 100%;
+}
+.cart_main .cart_info_wrap {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart_main .cart_info_wrap .goods_name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart_main .cart_info_wrap .goods_price_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart_main .cart_info_wrap .goods_price_wrap .goods_price {
+  color: var(--themeColor);
+  font-weight: bold;
+}
+.cart_main .cart_info_wrap .goods_price_wrap .cart_num_tools {
+  display: flex;
+  font-size: 32rpx;
+}
+.cart_main .cart_info_wrap .goods_price_wrap .cart_num_tools .goods_num {
+  display: flex;
+  align-items: center;
+  margin: 0 10rpx;
+}
+.cart_main .cart_info_wrap .goods_price_wrap .cart_num_tools .num_edit {
+  width: 50rpx;
+  height: 50rpx;
+  text-align: center;
+  border: 2rpx solid #e6e6e6;
+}
+.footer_tools {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  padding-left: 20rpx;
+  border-top: 1px solid #F8F8F8;
+  background-color: #FEFEFE;
+}
+.footer_tools .all_check {
+  flex: 2;
+}
+.footer_tools .total_price {
+  text-align: right;
+  flex: 4;
+  margin-right: 20rpx;
+}
+.footer_tools .total_price .total {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.footer_tools .total_price .total text {
+  color: var(--themeColor);
+}
+.footer_tools .pay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 40rpx;
+  color: white;
+  background-color: var(--themeColor);
+}

@@ -1,0 +1,55 @@
+.index_swiper swiper {
+  width: 100%;
+  height: calc(340/750 * 100vw);
+}
+.index_swiper swiper image {
+  width: 100%;
+  height: 100%;
+}
+.index_nav {
+  width: 750rpx;
+  display: flex;
+}
+.index_nav navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.index_nav navigator image {
+  width: 100%;
+}
+.index_floor .floor {
+  overflow: hidden;
+}
+.index_floor .floor .floor_title {
+  padding: 15rpx 0;
+}
+.index_floor .floor .floor_title image {
+  width: 100%;
+}
+.index_floor .floor .floor_list navigator {
+  float: left;
+  width: 33.33%;
+}
+.index_floor .floor .floor_list navigator:nth-last-child(-n+4) {
+  height: 27.72711207vw;
+  padding-left: 10rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(4),
+.index_floor .floor .floor_list navigator:nth-child(5) {
+  padding-bottom: 15rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(2),
+.index_floor .floor .floor_list navigator:nth-child(3) {
+  padding-bottom: 10rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(1) {
+  padding-left: 10rpx;
+}
+.index_floor .floor .floor_list navigator:nth-child(3),
+.index_floor .floor .floor_list navigator:nth-child(5) {
+  padding-right: 10rpx;
+}
+.index_floor .floor .floor_list navigator image {
+  width: 100%;
+  height: 100%;
+}

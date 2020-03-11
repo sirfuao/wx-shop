@@ -1,0 +1,29 @@
+<view>
+    <Tabs class="tab" tab="{{tabs}}" bind:tabsItemChange="handletabsItemChange"></Tabs>
+    <!--问题种类-->
+    <view class="problem">
+        <view class="title">问题种类</view>
+        <view class="problem_item">
+            <view class="item">功能建议</view>
+            <view class="item">购买遇到问题</view>
+            <view class="item">性能问题</view>
+            <view class="item other">其他</view>
+        </view>
+    </view>
+    <!--富文本输入框-->
+    <view class="fb_content">
+        <textarea placeholder="请描述一下您的问题...">
+        </textarea>
+        <!--自定义工具栏-->
+        <view class="tools_btn">
+            <button bindtap="handleTap">+</button>
+            <UpImg></UpImg>
+        </view>
+    </view>
+    <!--提交按钮-->
+    <view class="btn">
+        <button type="primary" bindtap="handleTap">
+        提交
+        </button>
+    </view>
+</view>

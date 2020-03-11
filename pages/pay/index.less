@@ -1,0 +1,96 @@
+page{
+    padding-bottom: 90rpx;
+}
+.pay{
+    //收货地址
+    .address{
+        display: flex;
+        padding: 20rpx;
+        justify-content: space-between;
+    }
+    //购物车
+    .cart{
+        .title{
+            display: flex;
+            align-items: center;
+            height: 90rpx;
+            font-size: 42rpx;
+            padding-left: 20rpx;
+            border-top: 1px solid var(--themeColor);
+            border-bottom: 1px solid var(--themeColor);
+        }
+        .goods_item{
+            display: flex;
+            height: 200rpx;
+            padding: 20rpx 20rpx 20rpx 0;
+            border-bottom: 1px solid #D8DAD7;
+            .goods_item_img{
+                flex: 2;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                image{
+                    width: 66%;
+                }
+            }
+            .goods_info{
+                flex: 4;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .goods_name{
+                    display: -webkit-box;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                }
+                .goods_price{
+                    display: flex;
+                    justify-content: space-between;
+                    .price{
+                        font-weight: bold;
+                        color: var(--themeColor);
+                    }
+                    .num{
+                        color: #767777;
+                    }
+                }
+            }
+        }
+    }
+    //支付
+    .goods_pay{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        display: flex;
+        height: 90rpx;
+        background-color: #FEFEFE;
+        border-top:1px solid #F8F8F8;
+        .info{
+            flex: 6;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-right: 15rpx;
+            text-align: right;
+            .price{
+                font-size: 32rpx;
+                .text{
+                    font-weight: bold;
+                    color: var(--themeColor);
+                }
+            }
+        }
+        .pay{
+            flex: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 42rpx;
+            background-color: var(--themeColor);
+        }
+    }
+}

@@ -1,0 +1,21 @@
+<SearchInput></SearchInput>
+<!--将父元素中的 tabs 数组传递给子组件 子组件用tab来接受-->
+    <!--bind监听自定义事件，记住bind后面没有冒号-->
+<Tabs tab="{{tabs}}" bind:tabsItemChange="handletabsItemChange"></Tabs>
+    <block wx:if="{{tabs[0].isActive}}">
+        <view class="first_tab">
+            <navigator url="/pages/goods_detail/main?goods_id={{item.goods_id}}" class="goods_item" wx:for="{{goodsList}}" wx:key="goods_id">
+             <!--左侧 图片容器-->
+             <view class="goods_img_wrap">
+                <image mode="widthFix" src="{{item.goods_small_logo?item.goods_small_logo : 'https://ae01.alicdn.com/kf/U4eb43455a1be49f3b436770e16f98042G.png'}}"/>
+             </view>
+                <!--右侧 商品-->
+                <view class="goods_content">
+                    <view class="goods_name">{{item.goods_name}}</view>
+                    <view class="goods_price">￥: {{item.goods_price}}</view>
+                </view>
+            </navigator>
+        </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">2</block>
+    <block wx:elif="{{tabs[2].isActive}}">3</block>

@@ -1,0 +1,4 @@
+<button type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserUnfo" plain>
+    登录授权
+</button>
+  

@@ -1,0 +1,55 @@
+.collect {
+  background-color: #F2F4F5;
+  height: 100vh;
+}
+.collect_main {
+  display: flex;
+  height: 60rpx;
+  margin-bottom: 40rpx;
+}
+.collect_main .collect_tips {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rpx 10rpx;
+  height: 100%;
+  margin: 20rpx;
+  background-color: #ffffff;
+  border: 1px solid gray;
+}
+.collect_main .active {
+  border: 1px solid var(--themeColor);
+}
+.collect_goods {
+  display: flex;
+  height: 200rpx;
+  border-bottom: 1px solid #D8DAD7;
+  background-color: #ffffff;
+}
+.collect_goods .goods_img {
+  flex: 2;
+  padding: 20rpx;
+}
+.collect_goods .goods_img image {
+  width: 70%;
+}
+.collect_goods .goods_info {
+  flex: 4;
+  padding: 20rpx 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.collect_goods .goods_info .goods_title {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.collect_goods .goods_info .price {
+  color: var(--themeColor);
+  font-weight: bold;
+}
+.img {
+  width: 100vw;
+}

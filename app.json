@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "components/searchInput/SearchInput",
+    "pages/category/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/main",
+    "pages/cart/index",
+    "pages/collect/index",
+    "pages/order/index",
+    "pages/search/index",
+    "pages/user/index",
+    "pages/feedback/index",
+    "pages/login/index",
+    "pages/auth/index",
+    "pages/pay/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb4450",
+    "navigationBarTitleText": "福奥商城",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor":"#E21E33",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "iconPath":"icons/home.png",
+        "selectedIconPath":"icons/home_clone.png",
+        "text": "首页"
+      },
+      {
+        "pagePath":"pages/category/index",
+        "iconPath":"icons/category.png",
+        "selectedIconPath":"icons/category_clone.png",
+        "text":"分类"
+      },
+      {
+        "pagePath":"pages/cart/index",
+        "iconPath":"icons/cart.png",
+        "selectedIconPath":"icons/cart_clone.png",
+        "text":"购物车"
+      },
+      {
+        "pagePath":"pages/user/index",
+        "iconPath":"icons/my.png",
+        "selectedIconPath":"icons/my_clone.png",
+        "text":"我的"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
