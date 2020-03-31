@@ -12,7 +12,7 @@ export function request(params){
       })
 
     //定义公共部分 url
-    const baseUrl = "加我微信，找我要后台接口地址"
+    const baseUrl = "接口报错"
     //将传过来的参数结构出来
     return new Promise((resolve,reject)=>{
         // 发起请求          
